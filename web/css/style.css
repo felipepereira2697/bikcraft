@@ -1,10 +1,13 @@
 /*General styles*/
 body
 {
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: Arial, Helvetica, sans-serif;   
 }
-
+img
+{
+    /*take margin of img off*/
+    display: block;
+}
 p
 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -29,6 +32,12 @@ p
 {
     color: #000;
     border: 3px solid #000;
+}
+
+.btn.btn-white:hover
+{
+    color: #FFF;
+    border: 3px solid #FFF;
 }
 
 .h2Title
@@ -112,7 +121,7 @@ p
     background: url("../img/bg.jpg") no-repeat center;
     background-size: cover;
     /*as the header is fixed, we need to margin-top the intro at the exactly height of the header section*/
-    margin-top: 95px;
+    margin-top: 92px;
     padding-top: 85px;
     text-align: center;
 }
@@ -210,15 +219,179 @@ p
 {
     padding: 20px;
     background: #000;
+    
 }
+
+.productListIcon img
+{
+    margin: 0 auto;
+}
+
 .call
 {
     /*To give it some padding to this element, we need to clear this element cause the others has float properties
     */
     padding-top: 40px;
     clear:both;
+    text-align: center;
 }
 .call p
 {
     margin-bottom: 20px;
+}
+
+/*Portfolio */
+.portfolio
+{
+    padding: 40px;
+    width: 100%;
+    background: #000;
+    text-align: center;
+}
+.portfolio .h2Title
+{
+    color: #FEC53F;
+}
+
+.portfolio .h2Title::after
+{
+    background: #FEC53F;
+}
+.portfolioList li:last-child
+{
+    margin-top:20px;
+}
+.portfolio .call p
+{
+    color: #FFF;
+}
+
+/*Quality */
+.quality
+{ 
+    padding: 60px 0;
+}
+.quality::after
+{
+    content:"";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.png") no-repeat center;
+    position: absolute;
+    top:209px;
+    z-index: -99;
+    right: 162px;
+}
+.qualityList
+{
+    padding-top:20px;
+}
+.quality img
+{
+    margin: 0 auto;
+}
+.qualityList li
+{
+    text-align: center;
+    padding:0 40px;
+}
+
+.qualityList li h3
+{
+    font-size:18px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    
+}
+
+.qualityList li h3:after
+{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background: #000;
+    margin: 6px auto;
+}
+
+/*break*/
+.break
+{
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    background-size:cover;
+    text-align: center;
+    padding-top: 40px;
+}
+.break .externalQuote
+{
+    max-width: 400px;
+}
+
+/*Footer*/
+.footer
+{
+    width: 100%;
+    background: #000;
+    color: #FFF;
+    padding: 10px;
+}
+.footer h3
+{
+    font-size:18px;
+    line-height: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 20px;
+    color: #FEC53F;
+    
+}
+.footer h3:after
+{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background: #FEC53F;
+    margin: 6px 0px 12px 0px;
+    
+}
+
+.footerOurHistory, .footerContact, .footerSocialMedia
+{
+    font-size:14px; 
+    line-height: 20px;
+
+}
+.footerOurHistory
+{
+    padding-right: 40px;
+}
+.footerContact ul li
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footerSocialMedia ul li
+{
+    display: inline-block;
+    border: 3px solid #FEC53F;
+    padding: 10px;
+    margin-right: 10px;
+}
+.footerSocialMedia ul li:hover
+{
+    border-color: #FFF;
+}
+.copy
+{
+    background: #FEC53F;
+    padding: 20px;
+    width: 100%;
 }
