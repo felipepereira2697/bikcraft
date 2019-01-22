@@ -3,3 +3,30 @@
     background: url("../img/bg-sobre.jpg") no-repeat center;
     background-size: cover;
 }
+.aboutMission
+{
+    padding-top: 60px;
+}
+
+.aboutMission p
+{
+    font-size:18px;
+    line-height: 25px;
+    /*1 in relation to its font size which is 18px*/
+    margin-bottom: 1em;
+    padding-right: 60px;
+}
+.aboutMission ul li
+{
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.team
+{
+    padding-top: 20px;
+}
+#aboutActive
+{
+    color: #FFF;
+}
