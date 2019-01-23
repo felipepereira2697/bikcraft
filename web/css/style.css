@@ -300,7 +300,7 @@ p
     color: #FEC53F;
 }
 
-.portfolio .h2Title::after
+.portfolio .h2Title:after
 {
     background: #FEC53F;
 }

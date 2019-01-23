@@ -1,0 +1,100 @@
+#productActive
+{
+    color: #FFF;
+}
+.productInternal
+{
+    background: url("../img/bg-produtos.jpg") no-repeat center;
+    /*the background-size property should always be under the background property or it will be subscribed*/
+    background-size: cover;
+}
+.productItem
+{
+    padding-top: 60px;
+}
+.productItem h2
+{
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    position: relative;
+    /*Using position relative now we can use top and left*/
+    /*The h2 is relative to itself, we can use negative pixels*/
+    top:-170px;
+    text-align: center;
+    color: #FFF;
+    /*
+        Comentario em portugues: o position relative deixa uma sombra onde o elemento foi criado originalmente, isso é para
+        tirar o espacamento deixado pela sombra do elemento, no caso, a sombra do h2
+    */
+    margin-bottom: -46px;
+}
+.productItem h2:after, .productItem h2:before
+{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background: #FFF;
+    margin: 6px auto;
+    
+}
+
+.productIcon
+{
+    background: #000;
+    padding: 70px 0;
+ 
+}
+.productIcon img
+{
+    margin: 0 auto;
+}
+
+.productInfo
+{
+    background: #000;
+}
+.productInfo p
+{
+    color: #FFF;
+    font-size:18px;
+    padding: 30px 40px;
+    line-height: 25px;
+    height: 182px;
+}
+.productInfo ul li
+{
+    background: #FEC53F;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    font-size:18px;
+    font-weight: bold;
+    line-height: 20px;
+    float: left;
+    text-align: center;
+    width: 229px;
+    height: 49px;   
+    padding-top: 16px; 
+    
+}
+.productInfo ul li:nth-child(even)
+{
+    margin-left:2px;
+}
+/*Budget Section*/
+
+.budgetForm
+{
+    padding: 40px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    
+}
+.budgetH2
+{
+    color: #FEC53F;
+}
