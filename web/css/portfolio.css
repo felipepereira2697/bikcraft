@@ -1,0 +1,32 @@
+#portfolioActive
+{
+    color: #FFF;
+}
+.portfolioInternal
+{
+    background: url("../img/bg-portfolio.jpg") no-repeat center;
+    /*the background-size property should always be under the background property or it will be subscribed*/
+    background-size: cover;
+}
+.clientQuote
+{
+    padding: 60px 0;
+    margin: 0 auto;
+    max-width: 460px;
+}
+.clientQuote p
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 25px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.clientQuote cite
+{
+    font-size: 18px;
+    font-weight: bold;
+    float:right;
+    font-style: normal;
+}
