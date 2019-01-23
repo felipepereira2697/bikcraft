@@ -114,10 +114,10 @@
             </div>
         </section>
         <!--Budget section-->
-        <section class="budgetForm">
+        <section class="budgetFormSection">
             <div class="container">
                 <h2 class="budgetH2 h2Title">Orçamento</h2>
-                <form id="budgetFormId" class="grid-8">
+                <form id="budgetFormId" class="grid-8 budgetForm">
                     <label for="name">Nome</label>
                     <input type="text" name="name" id="name" />
 
@@ -128,16 +128,16 @@
                     <input type="text" name="phone" id="phone" />
 
                     <label for="specifications">Especificações</label>
-                    <textarea type="text" name="specifications" id="specifications"></textarea>
+                    <textarea rows="5" cols="30" name="specifications" id="specifications"></textarea>
 
-                    <button type="submit" value="Enviar">
-
+                    <button class="btn" type="submit" value="Enviar">
+                        Enviar
                     </button>
                 </form>
                 <div class="budgetData grid-8">
                     <h3>Dados</h3>
                     <span>+55 11 91233-0987</span>
-                    <span>orcamento@bikcraft.com</span>
+                    <span class="sendTo">orcamento@bikcraft.com</span>
                     <h3>
                         Monte sua Bikcraft
                     </h3>

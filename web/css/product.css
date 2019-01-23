@@ -86,15 +86,101 @@
 }
 /*Budget Section*/
 
-.budgetForm
+.budgetFormSection
 {
-    padding: 40px;
+    padding: 40px 0;
     width: 100%;
-    background: #fff;
+    margin-top:60px;
+    background: #000;
     text-align: center;
     
 }
 .budgetH2
 {
     color: #FEC53F;
+}
+
+.budgetForm
+{
+    padding-right: 60px;
+    text-align: left;
+}
+
+.budgetForm label
+{
+    display: block;
+    margin-bottom: 4px;
+    color: #FFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:18px;
+    line-height: 25px;
+}
+.budgetForm input, .budgetForm textarea
+{
+    display: block;
+    width: 100%;
+    border: 4px solid #FEC53F;
+    background:none;
+    color: #FFF;
+    font-size:14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    outline:none;
+}
+
+/*goes to the element that has these two classes*/
+.budgetH2.h2Title:after
+{
+    background: #FEC53F;
+}
+
+.btn
+{
+    background: none;
+    padding: 7px 40px;
+}
+
+.budgetData
+{
+    text-align: left;
+    color: #FFF;
+}
+.budgetData h3
+{
+    color: #FEC53F;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 25px;
+    
+}
+.budgetData span
+{
+    display: block;
+    font-size:18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+.sendTo
+{
+    margin-bottom: 40px;
+}
+.budgetData ul
+{
+    padding-right: 60px;
+}
+.budgetData ul li
+{
+    padding: 10px 15px;
+    font-size: 14px;
+}
+.budgetData p
+{
+    margin: 8px 0;
+}
+.budgetData ul li:nth-child(odd)
+{
+    background: rgba(63, 63, 63, 0.4);
+    
 }
