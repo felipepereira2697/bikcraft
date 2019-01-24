@@ -1,0 +1,88 @@
+#contactActive
+{
+    color: #FFF ;
+}
+
+.contactInternal
+{
+    background: url("../img/bg-contato.jpg") no-repeat center;
+    /*the background-size property should always be under the background property or it will be subscribed*/
+    background-size: cover;
+}
+.contactFormSection
+{
+    padding: 30px 0;
+    margin-top:10px;
+}
+.contactForm label
+{
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 4px;
+}
+.contactForm input, .contactForm textarea
+{
+    padding: 6px 10px;
+    width: 90%;
+    border: 4px solid #FEC53F;
+    margin-bottom: 12px;
+    outline: none;
+}
+.btn
+{
+    background: none;
+    padding: 7px 40px;
+}
+.btn:hover
+{
+    border-color: #000;
+    color: #000;
+    cursor: pointer;    
+}
+
+.contactData h3
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FEC53F;
+    font-weight: bold;
+    line-height: 25px;
+}
+.contactData ul
+{
+    padding-right: 60px;
+}
+.contactData ul li
+{
+    padding: 10px 0px;
+    font-size: 18px;
+}
+.contactData span
+{
+    display: block;
+    font-size:18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+.socialMediaIcons
+{
+    width: 100%;
+    margin-top:40px;
+    margin-left: 0px;   
+}
+.socialMediaIcons ul li
+{
+    margin-top:10px;
+    margin-right: 10px;
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #FEC53F;
+}
+
+.socialMediaIcons ul li:hover
+{
+    border-color: #000;
+}

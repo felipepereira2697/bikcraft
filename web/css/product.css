@@ -140,6 +140,12 @@
     background: none;
     padding: 7px 40px;
 }
+.btn:hover
+{
+    border-color: #FFF;
+    color: #FFF;
+    cursor: pointer;    
+}
 
 .budgetData
 {
