@@ -29,6 +29,7 @@ p
     line-height: 20px;
     font-size:14px;
     font-weight: bold;
+    transition: all .5s ease;
 }
 .btn.btn-black:hover
 {
@@ -145,12 +146,14 @@ p
     font-size:14px;
     line-height: 20px;
     text-decoration: none;
+
     /*
         To increase the click area of the link we just need a little padding right here, 
         p.s: as we are using box-sizing: border-box; property on grid.css the padding wont increases the size of the element, 
         but it still gets added
     */
     padding: 10px 0;
+    transition: all .5s ease;
     
     
 }
@@ -434,6 +437,7 @@ p
     border: 3px solid #FEC53F;
     padding: 10px;
     margin-right: 10px;
+    transition: all .5s ease;
 }
 .footerSocialMedia ul li:hover
 {
@@ -444,4 +448,53 @@ p
     background: #FEC53F;
     padding: 20px;
     width: 100%;
+}
+
+/*Animations*/
+.js .intro h1, .js .intro blockquote, .js .intro .btn, .js .animar, .js .animarInternal, .js .internalIntro h1, .js .internalIntro p
+{
+    opacity: 0;
+}
+.animated 
+{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown 
+{
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+@keyframes fadeInDown 
+{
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -20px, 0);
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+}
+  
+.fadeInDown 
+{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
