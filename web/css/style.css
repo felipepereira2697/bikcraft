@@ -7,6 +7,8 @@ img
 {
     /*take margin of img off*/
     display: block;
+    /*To fluid images*/
+    max-width: 100%;
 }
 p
 {
