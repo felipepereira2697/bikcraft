@@ -1,7 +1,38 @@
-/*to 768px to tablets*/
+/*=======================================================================================================================================*/
+
+/*
+=======================================================================================================================================
+																TABLET AREA
+=======================================================================================================================================
+*/
+/*to 768px to TABLETS*/
 @media only screen and (min-width: 768px) and (max-width: 959px)
 {
 	
+	/*INDEX RESPONSIVE*/
+	/*Quality section on Index.html*/
+	.quality::after
+	{
+		right: 66px;
+	}
+	.qualityList li
+	{
+    	padding:0 10px;
+	}
+
+	/*Footer on every page*/
+	.footerSocialMedia ul li
+	{
+		padding: 8px;
+		margin-right: 6px;
+	}
+	.footerSocialMedia ul li a img
+	{
+		width: 24px;
+		height: 24px;
+	}
+	/*END INDEX RESPONSIVE*/
+
 	.container {
 		width: 768px;
 	}
@@ -26,9 +57,26 @@
 	
 }
 
-/*To smartphones*/
+
+/*=======================================================================================================================================*/
+
+/*
+=======================================================================================================================================
+																SMARTPHONE AREA
+=======================================================================================================================================
+*/
+
+
 @media only screen and (max-width: 767px)
 {
+	/*ACTIVE STYLE  RESPONSIVE */
+	#aboutActive, #contactActive, #portfolioActive, #productActive
+	{
+		border-color: #FFF;
+		color: #FFF;
+	}
+	/*INDEX RESPONSIVE*/
+	
 	.header
 	{
 		position: relative;
@@ -65,12 +113,46 @@
 	.intro
 	{
 		margin-top: 0;
-		padding-top:20px;
+		padding-top:40px;
 	}
 
+	.intro h1
+	{
+		font-size: 36px;
+		line-height: 48px;
+	}
+	.internalIntro
+	{
+		margin-top: 0px;
+	}
+	/*Quality Section*/
 
+	.quality:after
+	{
+		display: none;
+	}
+	/*Call to action button*/
+	.call
+	{	
+		padding-top: 10px;
+	}
 
+	/*END INDEX RESPONSIVE*/
 
+	/* ABOUT SECTION RESPONSIVE */
+	.aboutMission p
+	{
+		font-size:14px;
+		line-height: 20px;
+		padding-right: 0px;
+	}
+	.aboutMission ul li
+	{
+    	font-size: 14px;
+    	font-family: Georgia, 'Times New Roman', Times, serif;
+    	line-height: 25px;
+	}
+	/* END ABOUT SECTION RESPONSIVE */
 
 
 
