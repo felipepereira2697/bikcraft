@@ -30,3 +30,75 @@
     float:right;
     font-style: normal;
 }
+
+
+/*PLUGIN AREA*/
+.rslides, .rslidesPortfolio
+{
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+  
+.rslides li, .rslidesPortfolio li 
+{
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+  
+.rslides li:first-child, .rslidesPortfolio li:first-child
+{
+    position: relative;
+    display: block;
+    float: left;
+}
+  
+.rslides img, .rslidesPortfolio img
+{
+    display: block;
+    height: auto;
+
+    width: 100%;
+    border: 0;
+}
+
+.rslides_tabs
+{
+    margin-top:14px;
+}
+
+.rslides_tabs li
+{
+    display: inline;
+    margin: 0 5px;
+}
+
+.rslides_tabs li a
+{
+    display: inline-block;
+    height: 15px;
+    overflow: hidden;   
+    width: 15px;
+    background: #1D1D1D;
+    /*To hide the numbers of the pager (1,2,3...) we can hide it giving it the same color as the background*/
+    color: #1D1D1D;
+    border-radius: 50%;
+}
+
+/*To know where the slide is*/
+
+/*Comentario em portugues:
+    PROCURE UM ELEMENTO COM A CLASSE rslides_tabs entre e PROCURE a tag <li> que tenha a classe rslides_here e acesse a tag <a> dentro do <li>
+*/
+.rslides_tabs li.rslides_here a
+{
+    background: #FEC53F;
+    color: #FEC53F;
+}

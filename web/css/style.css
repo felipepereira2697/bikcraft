@@ -306,7 +306,7 @@ p
 {
     background: #FEC53F;
 }
-.portfolioList li:last-child
+.portfolioList div:last-of-type
 {
     margin-top:20px;
 }
